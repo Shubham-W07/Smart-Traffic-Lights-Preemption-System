@@ -1,0 +1,326 @@
+/* Universal Styling */
+.about-page-container {
+    font-family: 'Inter', sans-serif;
+    min-height: 100vh;
+    background-color: #f4f7f9;
+    /* Light, clean background */
+    color: #333;
+}
+
+/* 1. Header Section - Darker Blue Applied */
+.about-header {
+    background-color: #133863;
+    /* Darker, richer navy blue */
+    color: #ffffff;
+    padding: 4rem 1.5rem;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+.header-content {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.logo-circle {
+    background-color: #ffffff;
+    color: #133863;
+    /* Match primary color */
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1.5rem;
+    box-shadow: 0 0 0 5px rgba(255, 255, 255, 0.3);
+}
+
+.logo-icon {
+    font-size: 2.5rem;
+}
+
+.about-header h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.subtitle {
+    font-size: 1.1rem;
+    color: #a2d2ff;
+    /* Adjusted lighter color for contrast */
+}
+
+/* General Section Styling */
+.section {
+    padding: 3rem 1.5rem;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.section-title {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #007bff;
+    text-align: center;
+    margin-bottom: 2.5rem;
+    border-bottom: 3px solid #007bff;
+    display: inline-block;
+    padding-bottom: 5px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Specific styling for section titles within dark backgrounds */
+.section-details .section-title,
+.section-highlights .section-title {
+    color: #ffffff;
+    border-bottom: 3px solid #a2d2ff;
+}
+
+/* 2. Problem & Goal Section */
+.problem-goal-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+.grid-box {
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+    border-top: 5px solid;
+}
+
+.grid-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.problem-box {
+    border-color: #dc3545;
+}
+
+/* Red for critical issues */
+.goal-box {
+    border-color: #007bff;
+}
+
+/* Blue for core mission */
+.approach-box {
+    border-color: #28a745;
+}
+
+/* Green for solution */
+
+.box-icon {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.grid-box h3 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: #333;
+}
+
+.box-detail {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* 3. Detailed Objectives Section - Updated to match System Highlights design */
+.section-details {
+    background-color: #133863;
+    /* Use dark navy blue from header */
+    color: #ffffff;
+    border-radius: 15px;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.intro-text {
+    max-width: 800px;
+    margin: 0 auto 2rem;
+    text-align: center;
+    line-height: 1.6;
+    font-size: 1.05rem;
+    color: #a2d2ff;
+    /* Light blue text for better readability on dark blue */
+}
+
+.objective-list {
+    list-style: none;
+    padding-left: 0;
+    max-width: 1000px;
+    margin: 0 auto;
+    display: grid;
+    /* Objectives displayed as a grid of distinct blue cards */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.objective-list li {
+    background-color: #007bff;
+    /* Primary Blue card background */
+    padding: 20px;
+    border-radius: 8px;
+    line-height: 1.5;
+    color: #ffffff;
+    font-weight: 500;
+    transition: transform 0.3s, background-color 0.3s;
+    position: relative;
+    padding-left: 55px;
+    /* Space for the checkmark icon */
+    border-left: none;
+    /* Remove border-left accent */
+    border-bottom: 5px solid #a2d2ff;
+    /* Light blue accent border */
+    margin-bottom: 0;
+}
+
+.objective-list li:hover {
+    transform: translateY(-2px);
+    background-color: #0056b3;
+    /* Slightly darker blue on hover */
+    color: #ffffff;
+}
+
+.objective-list li::before {
+    content: '✓';
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.5rem;
+    color: #ffffff;
+    /* White checkmark on blue background */
+    font-weight: bold;
+}
+
+/* 4. System Highlights Section */
+.section-highlights {
+    background-color: #343a40;
+    /* Dark background for emphasis */
+    color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.highlight-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+}
+
+.highlight-box {
+    background-color: #495057;
+    padding: 20px;
+    border-radius: 8px;
+    min-height: 150px;
+    transition: background-color 0.3s;
+}
+
+.highlight-box:hover {
+    background-color: #0056b3;
+    /* Blue on hover for focus */
+}
+
+.highlight-title {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #a2d2ff;
+    /* Light blue accent */
+    margin-bottom: 0.5rem;
+}
+
+.highlight-detail {
+    font-size: 0.95rem;
+    color: #ccc;
+}
+
+/* 5. Technologies & Outcomes Section */
+.tech-outcomes-wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 40px;
+    padding-top: 2rem;
+}
+
+@media (min-width: 900px) {
+    .tech-outcomes-wrapper {
+        grid-template-columns: 2fr 1fr;
+    }
+}
+
+.section-title-small {
+    font-size: 1.75rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 1.5rem;
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 5px;
+    display: inline-block;
+}
+
+/* Technologies Grid - Forced 2x2 Layout */
+.tech-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* Enforce 2 columns */
+    gap: 15px;
+}
+
+@media (max-width: 550px) {
+    .tech-grid {
+        grid-template-columns: 1fr;
+        /* Revert to single column on small screens */
+    }
+}
+
+.tech-box {
+    background: #ffffff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    border-left: 4px solid #007bff;
+}
+
+.tech-title {
+    font-weight: 600;
+    color: #007bff;
+    margin-bottom: 3px;
+}
+
+.tech-detail {
+    font-size: 0.9rem;
+    color: #555;
+}
+
+.outcomes-section {
+    background-color: #d4edda;
+    /* Success/Outcome Green */
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.outcomes-section .section-title-small {
+    color: #155724;
+    /* Dark green text */
+    border-bottom-color: #155724;
+}
+
+.outcomes-text {
+    line-height: 1.6;
+    color: #155724;
+}
