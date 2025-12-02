@@ -1,4 +1,4 @@
-# Smart Traffic Management and Signal Preemption for Emergency Services
+# Smart Signal Preemption System For Emergency Services
 
 This project implements an intelligent, automated system to prioritize the passage of emergency vehicles (ambulances) through urban intersections by dynamically controlling traffic signals based on real-time location and movement. The core goal is to minimize delay at traffic junctions, which is crucial for patient survival in critical situations.
 
@@ -92,5 +92,6 @@ The server-side logic follows an event-driven flow to process location updates a
 ## Results and Future Scope
 
 The project successfully created a functional prototype that demonstrated instantaneous signal response (average delay of 1 to 3 seconds) to ambulance movement, proving the system's reliability in reducing intersection delays.
+
 
 * **Future Scope:** Expanding the system to include mobile applications for all stakeholders, integrating advanced route prediction logic, supporting centralized fleet management, and coordinating multi-node traffic networks for a continuous green corridor.
