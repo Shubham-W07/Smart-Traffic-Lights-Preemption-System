@@ -1,5 +1,5 @@
 /* Actual taking the region based on user co-ordinates */
-// const GOOGLE_API_KEY = "AIzaSyD59cbxDKz-cVKh_VKPtQ_-LPjv-3BH2yg";
+// const GOOGLE_API_KEY = "API_KEY";
 
 // export async function getAreaName(lat, lon) {
 //   try {
