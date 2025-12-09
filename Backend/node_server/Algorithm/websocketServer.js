@@ -1,7 +1,7 @@
 import { WebSocketServer } from "ws";
 import { spawn } from "child_process";
 import { initMQTT, sendRequest } from "./mqtt_request.js";
-import { getNeareBySignalCoOrdinates } from "./get_nearby_signal_coOrdinates.js";
+import { getNeareBySignalCoOrdinates } from "./get_nearby_signal_coordinates.js";
 
 
 export function createWebSocketServer(PORT) {
@@ -117,3 +117,4 @@ export function createWebSocketServer(PORT) {
     });
   });
 }
+
